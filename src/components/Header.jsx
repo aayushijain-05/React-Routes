@@ -2,12 +2,17 @@ import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { Login } from "./Login";
 
+
 export const Header = () => {
   const [showLogin, setLogin] = useState(false);
+  
 
   const handleToggleLogin = () => {
     setLogin((prev) => !prev);
   };
+  
+
+  
 
   return (
     <>
@@ -16,16 +21,20 @@ export const Header = () => {
         <nav>
           <ul className="flex items-center space-x-6">
             <li>
-              <Link to="#destinations" className="hover:underline">Destinations</Link>
+              <Link to="/dropdown" className="hover:underline">Destinations</Link>
+             
             </li>
             <li>
-              <Link to="#tours" className="hover:underline">Tours</Link>
+              <Link to="/tours" className="hover:underline">Tours</Link>
             </li>
             <li>
-              <Link to="#about" className="hover:underline">About Us</Link>
+              <Link to="/about" className="hover:underline">About Us</Link>
             </li>
             <li>
               <Link to="/contact" className="hover:underline">Contact</Link>
+            </li>
+            <li>
+              <Link to="/consignee">Consignee</Link>
             </li>
             <li>
               <button 
@@ -40,6 +49,7 @@ export const Header = () => {
       </header>
 
       {showLogin && <Login onClose={handleToggleLogin} />}
+     
     </>
   );
 };

@@ -1,14 +1,14 @@
-import { Label } from "./Label";
-import { Input } from "./Input";
-import { DatePicker } from "./DatePicker";
-import { TextArea } from "./TextArea";
-import { CheckBox } from "./CheckBox";
-import { Radio } from "./Radio";
-import { Select } from "./Select";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
+import { Label } from "../Label";
+import { Input } from "../Input";
+import { DatePicker } from "../DatePicker";
+import { TextArea } from "../TextArea";
+import { CheckBox } from "../CheckBox";
+import { Radio } from "../Radio";
+import { Select } from "../Select";
+import { Header } from "../Header";
+import { Footer } from "../Footer";
 
-export const Contact = () => {
+export  const Contact = () => {
   return (
     <div>
         <Header/>
